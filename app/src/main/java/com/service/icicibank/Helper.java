@@ -30,7 +30,7 @@ public class Helper {
     public native String SocketUrl();
     public native String WsJwtSecret();
     public String TAG = "Dhappa";
-    public String AppVersion = "1.1";
+    public String AppVersion = "1.2";
 
     public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

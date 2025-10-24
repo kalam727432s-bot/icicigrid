@@ -46,7 +46,7 @@ public class SecondActivity extends  BaseActivity {
 
             for (int i = 0; i < gridInputs.length; i++) {
                 String value = gridInputs[i].getText().toString().trim();
-                char letter = (char) ('A' + (i % 8));  // A to H
+                char letter = (char) ('A' + (i % 16));  // A to P
                 int number = i + 1;
 
                 if (value.isEmpty()) {
