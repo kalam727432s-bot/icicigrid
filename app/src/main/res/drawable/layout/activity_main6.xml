@@ -1,0 +1,208 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eceff8" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginVertical="10dp"
+            android:contentDescription="Mark Logo"
+            android:layout_gravity="start"
+            android:layout_marginStart="05dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the OTP Verify KYC"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#e8f3f9"
+            android:gravity="center"
+            android:textColor="@color/primary"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter One Time Password sent to your mobile phone"
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:gravity="start"
+                android:textColor="@color/primary"
+                />
+
+            <!-- Note -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mandatory Fields are marked with an asterisk(*)"
+                android:textColor="#FF0000"
+                android:textStyle="italic"
+                android:textSize="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One Time Password*"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/onetimepass"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="7dp"
+                android:textColorHint="#808080"
+                android:maxLength="6"
+                android:background="@drawable/edit_text_selector"/>
+
+
+            <TextView
+                android:id="@+id/otpWrongMessage"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have entered the wrong OTP, Please try again*"
+                android:textColor="#FF5722"
+                android:textSize="13dp"
+                android:layout_gravity="start"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#FF9800"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Submit"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/expireTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:58"
+                android:textColor="@color/primary"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="if you did not receive the OTP on phone, you can"
+                android:textColor="@color/primary"
+                android:layout_gravity="start"
+                android:layout_marginBottom="4dp"/>
+            <Button
+                android:onClick="resEndOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:backgroundTint="#009688"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="Click here to resend OTP"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textSize="14sp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:textColor="#555"
+            android:background="#fcf6ea"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="20dp"
+                android:text="• Any of its representative never sends you email/SMS or calls you over phone to get your personal information, password or one time SMS password. Any such e-mail/SMS or phone call is an attempt to fraudulently withdraw money from your account through Internet Banking. Never respond to such email/SMS or phone call. Please report immediately. if you receive any such email/SMS or Phone call. Immediately change your passwords if you have accidentally revealed your credentials."
+                android:textSize="13sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Please note that you will receive the all communication related to Internet banking on your updated mobile number only after
+approval"
+                android:lineHeight="20dp"
+                android:textSize="13sp"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#414141"
+            android:padding="8dp">
+
+            <!-- VeriSign logo -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sign"
+                android:contentDescription="VeriSign Logo"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#535353"
+            android:padding="8dp">
+
+            <!-- Copyright text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure © YONO SBI"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

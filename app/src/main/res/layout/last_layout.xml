@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#17F8C8C5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success !"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your KYC Verification is pending."
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wait 24 Hours"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginVertical="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KYC Apply Successfully registered !"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our customer support contact you shortly..."
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/logo"
+        android:contentDescription="PNB Logo"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:onClick="GoToHome"
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Other Queries"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

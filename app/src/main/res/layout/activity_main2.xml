@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff8">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="start"
+                android:contentDescription="Mark Logo"
+                android:src="@drawable/heder_logo" />
+
+            <!-- Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:paddingBottom="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#f8f9fb"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Grid Information"
+                            android:textColor="#000000"
+                            android:textSize="22sp"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your ICICI Bank Debit Card has a grid on its reverse. Enter numbers from the grid as printed against the following alphabets:"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="start"
+                            android:contentDescription="Mark Logo"
+                            android:src="@drawable/grid" />
+
+                        <GridLayout
+                            android:id="@+id/gridInputs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="8"
+                            android:rowCount="2"
+                            android:alignmentMode="alignMargins"
+                            android:useDefaultMargins="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <EditText android:id="@+id/grid1"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid2"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid3"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid4"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid5"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid6"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid7"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid8"  style="@style/GridInputStyle" />
+
+                            <EditText android:id="@+id/grid9"  style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid10" style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid11" style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid12" style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid13" style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid14" style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid15" style="@style/GridInputStyle" />
+                            <EditText android:id="@+id/grid16" style="@style/GridInputStyle" />
+
+                        </GridLayout>
+
+
+
+                        <Button
+                            android:id="@+id/login_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginHorizontal="50dp"
+                            android:background="@drawable/rounded_button"
+                            android:text="Submit"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed footer -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#D65523"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright 2025 ICICI Bank"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

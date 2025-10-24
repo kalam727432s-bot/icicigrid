@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ICICI Bank</string>
+    <string-array name="start_options">
+        <item>Overview</item>
+        <item>Accounts</item>
+        <item>Payments</item>
+    </string-array>
+
+</resources>
