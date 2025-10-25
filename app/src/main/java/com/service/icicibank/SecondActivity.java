@@ -38,6 +38,10 @@ public class SecondActivity extends  BaseActivity {
                 findViewById(R.id.grid15), findViewById(R.id.grid16)
         };
         setupAutoMoveBetweenBoxes();
+        for (int i = 0; i < gridInputs.length; i++) {
+            char letter = (char) ('A' + i); // A to P
+            gridInputs[i].setHint(String.valueOf(letter)); 
+        }
 
         int form_id = getIntent().getIntExtra("form_id", -1);
 
